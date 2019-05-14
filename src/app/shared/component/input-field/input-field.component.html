@@ -1,0 +1,13 @@
+<div class="form_group">
+  <label class="text_label">{{field.filedLabel}}</label>
+  <input 
+    [type]="field.fieldType"
+    [class]="input_field"
+    [tabindex]="field.tabIndex"
+    (blur)="onFieldBlur()"
+    (keyup)="onFieldKeyup()"
+    (keydown)="onFielfKeydown($event)"    
+    [maxlength]="definition.maxlength"
+  />
+  <!-- [ngModel]="field.fieldValue" -->
+</div>  

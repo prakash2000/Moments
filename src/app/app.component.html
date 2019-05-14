@@ -1,20 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="main_wrapper">  
+<div class="main_wrapper">
   <div class="sidebar_wrapper">
-      <div class="site_logo">
-        Secret Santa
-      </div>
-      <div class="menulist">
-        <ul>
-          <h4 class="menu_group_header">Matches</h4>
-          <li>
-            <a href="/newtask">Create Task</a>
-          </li>
-        </ul>
-      </div>
+    <app-sidebar></app-sidebar>
   </div>
-</div>
-<div class="main_content">
-  <h2>Santa</h2>
-  <router-outlet></router-outlet>
+  <div class="main_content">
+    <div class="topnav_bar">
+      <div class="usernav">
+        <span class="userpic">KP</span>
+      </div>
+    </div>      
+    <router-outlet></router-outlet>
+  </div>
 </div>
